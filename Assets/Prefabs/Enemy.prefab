@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7070323938736531102}
   - component: {fileID: 1721027989854787479}
   - component: {fileID: 862357800822489647}
+  - component: {fileID: 8850770256194550527}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -169,4 +170,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96b2a65c69664ae49de63ef02fd3492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBehaviour
-  _boundaryData: {fileID: 11400000, guid: ffe6ed3bccbed49d18179f4e6c8d7d4a, type: 2}
+  player: {fileID: 0}
+  _enemySpeed: 0
+  _enemyDamage: 0
+--- !u!114 &8850770256194550527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919750774581587745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15502278949babf49aa968424b1f51f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
