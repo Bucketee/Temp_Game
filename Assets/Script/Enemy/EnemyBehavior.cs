@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    [SerializeField] private Transform player;
+    private Transform player;
     
     private Rigidbody2D _rigidbody2D;
     private EnemyData _enemyData;

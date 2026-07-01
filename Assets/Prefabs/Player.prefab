@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5969680304018874293}
   - component: {fileID: 2157460129665948959}
-  - component: {fileID: 3712265121428976071}
   - component: {fileID: 4109332027326596078}
   - component: {fileID: 9153641765741892639}
   - component: {fileID: 1945636726945338806}
@@ -30,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 1964186384733423329}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0094, y: 1.1989, z: 0}
-  m_LocalScale: {x: 0.9811, y: 0.9623, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,19 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &3712265121428976071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964186384733423329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da6a6281890204507aabc216d9e5fdee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerBehavior
-  _boundaryData: {fileID: 11400000, guid: ffe6ed3bccbed49d18179f4e6c8d7d4a, type: 2}
 --- !u!114 &4109332027326596078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035fa35da4dbf4ee9b6e0cdd39f3dacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputController
+  isDashable: 1
+  dashCoolTime: 0.5
 --- !u!114 &9153641765741892639
 MonoBehaviour:
   m_ObjectHideFlags: 0
