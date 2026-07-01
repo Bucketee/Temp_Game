@@ -7,12 +7,20 @@ public class EnemyBehavior : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private EnemyData _enemyData;
     private float _enemySpeed;
-    private float _enemyDamage; 
+    private float _enemyDamage;
 
-    private void Start()
+    private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _enemyData = GetComponent<EnemyData>();
+    }
+    
+    private void OnEnable()
+    {
+        player = GameManager.Instance.player.transform;
+
+        _enemySpeed = _enemyData.enemySpeed;
+        _enemyDamage = _enemyData.enemyDamage;
     }
     
     private void Update()
