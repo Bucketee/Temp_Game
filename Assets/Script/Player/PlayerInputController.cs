@@ -46,10 +46,10 @@ public class PlayerInputController : MonoBehaviour
         if (_inputVector.magnitude == 0) yield break;
         
         isDashable = false;
-        _playerBehaviour.Dash(_inputVector * _playerData.DashingSpeed);
-        yield return new WaitForSeconds(_playerData.DashDuration);
-        _playerBehaviour.Dash(Vector2.zero);
-        yield return new WaitForSeconds(_playerData.DashCoolTime);
+        _playerBehaviour.Dash(_inputVector * _playerData.DashingSpeed); //대시 중
+        yield return new WaitForSeconds(_playerData.DashDuration); //지속시간동안 기다림
+        _playerBehaviour.Dash(Vector2.zero); //대시 끝
+        yield return new WaitForSeconds(_playerData.DashCoolTime); //대시 쿨타임
         isDashable = true;
     }
 
