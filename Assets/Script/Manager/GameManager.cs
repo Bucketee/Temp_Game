@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public GameObject player;
     
     private void Awake()
     {
@@ -13,5 +14,10 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
+    }
+
+    private void Start()
+    {
+        player = GameObject.FindWithTag("Player");
     }
 }

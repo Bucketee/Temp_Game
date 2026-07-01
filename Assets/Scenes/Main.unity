@@ -363,8 +363,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBehavior
   player: {fileID: 1638470099}
-  _enemySpeed: 10
-  _enemyDamage: 20
 --- !u!50 &616406767
 Rigidbody2D:
   serializedVersion: 5
@@ -542,7 +540,7 @@ GameObject:
   - component: {fileID: 1638470103}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
