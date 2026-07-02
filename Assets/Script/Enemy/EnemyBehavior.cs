@@ -17,10 +17,13 @@ public class EnemyBehavior : MonoBehaviour
     
     private void OnEnable()
     {
-        player = GameManager.Instance.player.transform;
-
         _enemySpeed = _enemyData.enemySpeed;
         _enemyDamage = _enemyData.enemyDamage;
+    }
+
+    private void Start()
+    {
+        player = GameManager.Instance.player.transform;
     }
     
     private void Update()
